@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: express-ingress  # Update with a meaningful name
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+    - host: express.com  # Update with your desired hostname
+      http:
+        paths:
+          - path: /
+            pathType: Prefix  # Specify the pathType as required
+            backend:
+              service:
+                name: express-mongo-express-service  # Correct service name
+                port:
+                  number: 8080  # Update with the port of your service
