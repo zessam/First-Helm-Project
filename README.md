@@ -1,5 +1,3 @@
-# First-Helm-Project
-
 # Helm Charts for MongoDB Deployment
 
 This repository contains Helm charts for deploying MongoDB and Mongo Express client on Kubernetes clusters. Helm is a package manager for Kubernetes that simplifies the process of deploying and managing applications.
